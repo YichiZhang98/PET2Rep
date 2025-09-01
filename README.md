@@ -1,11 +1,13 @@
-# <div align="center"><b> PET2Rep </b></div>
+# PET2Rep
 [**📖 arXiv**](https://arxiv.org/abs/2508.04062) | [**🎈 GitHub**](https://github.com/YichiZhang98/PET2Rep) 
 
 This repository is the official report for **PET2Rep: Towards Vision-Language Model-Drived Automated Radiology Report Generation for Positron Emission Tomography**.
 ![image](PET2Rep.png)
 ## Overview
 
-PET2Rep is the benchmark for PET report generation, whose dataset is collected from real clinical scenarios. 
+PET2Rep is the first benchmark for evaluating VLMs in PET radiology report generation. It includes whole-body PET/CT image-report pairs covering dozens of organs with metabolic information, which is essential for reflecting the real-world clinical comprehensiveness of PET imaging in oncologic diagnostics.
+
+![image](Overview.png)
 
 ## Quick Start
 To get started, please clone this repository and follow the instructions below to set up your environment and run the demo.
@@ -59,9 +61,14 @@ We provide PET/CT slices as image input, and a typical nuclear medical report as
 You are an experienced nuclear medicine physician, skilled in combining PET/CT images with clinical information to prepare diagnostic reports. Please generate a nuclear medicine report in a structured format based on the provided whole-body FDG-PET/CT images. Based on the template modifications, please provide a detailed description of the location, size, and degree (increased/decreased/abnormal) of abnormal 18F-FDG uptake. Also provide the CT findings of the abnormal PET and CT areas. Below is a sample structured report output template. Please adjust the conclusions in [] and 【】 based on the patient's PET/CT images. The following is a sample structured report output, strictly following the following format: A whole-body PET scan is performed after 60 minutes of rest after intravenous administration of 18F-FDG in the fasting state. The whole-body PET scan shows: [normal] brain morphology and structure, 【uniform and symmetrical】 radioactivity distribution in the bilateral cerebral cortex, and 【no significant abnormalities】 in FDG uptake. The ventricles, sulci, fissures, and cisterns show [widening of the morphology, symmetry of the ventricles, and no deviation from the midline]. The morphology and contours of the bilateral eyes show [no abnormalities], and 【no abnormal】 FDG uptake. The right maxillary sinus mucosa shows [slight thickening with some calcification], and FDG uptake is 【normal】. The nasopharyngeal wall shows [no thickening, and the palatine tonsils are symmetrical]. FDG uptake is 【physiological】. The hypopharynx shows [no abnormalities in morphology or structure]. The bilateral parotid and submandibular glands show [normal morphology and density], and FDG uptake is 【physiological】. The thyroid gland shows [normal morphology and size, with uniform density], and FDG uptake is 【normal】. [Several small lymph nodes are visible] in the deep cervical spaces and submandibular spaces, with 【increased】 FDG uptake in some lymph nodes. Both lungs show [increased luminosity, with cystic lucencies observed beneath the pleura of both upper lobes. The right middle lobe is reduced in size, and a patchy increased density is observed near the hilum of the right middle lobe]. FDG uptake is 【increased】. The cardiac shadow shows [no abnormalities. Calcification of some arterial walls (including the coronary arteries) is observed]. The esophagus shows [no dilatation, no significant wall thickening or mass], and 【no increased】 FDG uptake. The liver margins are [not smooth, and the fissures are not significantly widened. A large, slightly hypodense mass with unclear margins is observed in the lower segment of the right liver lobe on plain scan CT]. 【Increased】 FDG uptake is observed. [A slightly hypodense nodule with a well-defined margin] is observed in the left liver lobe. FDG uptake is 【reduced compared to background uptake】. [A nodular, dense shadow is also observed in the diaphragmatic dome region] of the right liver lobe. The main portal vein and its left and right tributaries show [significant thickening and increased density], with 【increased】 FDG uptake. [Lymph nodes are observed] in the portal space, hepatogastric space, and retroperitoneum, with 【mildly increased】 FDG uptake. The gallbladder is [slightly full, with no thickening of the gallbladder wall]. Local FDG uptake is 【normal】. The pancreas shows [normal morphology, with small nodular calcifications in the pancreatic body and no widening of the main pancreatic duct]. FDG uptake shows 【no significant abnormalities】. The spleen shows [no abnormalities in morphology, size, or density]. FDG uptake shows 【no abnormalities】. The bilateral urinary system shows residual contrast agent. The left kidney shows [reduced size, with multiple cystic, low-density shadows and slightly high-density nodules with clear margins]. FDG uptake is 【absent】. The right kidney shows [a fatty nodule at the upper pole]. FDG uptake shows 【no abnormalities】. The renal pelvis, calyces, and ureters show [no widening]. The adrenal glands show [no significant abnormalities]. FDG uptake shows 【no abnormalities】. The stomach shows [adequate filling, with no significant thickening of the stomach wall]. 【Increased】 FDG uptake is observed in portions of the stomach wall. The intestine shows [poor filling, with no significant thickening or masses in the bowel wall]. FDG uptake is 【physiological】. The prostate is [slightly enlarged, with several calcifications within the parenchyma]. FDG uptake is 【normal】. The bladder is [poorly filled, with residual contrast agent visible]. Bone density is [unevenly decreased], and the spine has [bone hyperplasia at the margins of some vertebrae]. FDG uptake is 【normal】.
 ```
 
+## Citation
 
-
-
-
-
-
+If you find this repository helpful, please consider citing:
+```
+@article{zhang2025pet2rep,
+  title={PET2Rep: Towards Vision-Language Model-Drived Automated Radiology Report Generation for Positron Emission Tomography},
+  author={Zhang, Yichi and Zhang, Wenbo and Ling, Zehui and Feng, Gang and Peng, Sisi and Chen, Deshu and Liu, Yuchen and Zhang, Hongwei and Wang, Shuqi and Li, Lanlan and others},
+  journal={arXiv preprint arXiv:2508.04062},
+  year={2025}
+}
+```
