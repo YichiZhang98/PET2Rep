@@ -35,10 +35,8 @@ generation_config = GenerationConfig(
 
 
 output_list = []
-for subject_prompt in default_prompt[0:5]:
+for subject_prompt in default_prompt:
     subject_id = subject_prompt['patient_id']
-    pet_path = subject_prompt['prompt_user_pet']
-    ct_path = subject_prompt['prompt_user_structure']
     prompt_system = subject_prompt['prompt_system']
     prompt_user_text = subject_prompt['prompt_user_text']
     image_paths = subject_prompt['prompt_user_fuse']
@@ -91,4 +89,5 @@ for subject_prompt in default_prompt[0:5]:
 
 with open(os.path.join('origin_results','result_qwen25vl-32b_v2_git.jsonl'), 'w', encoding='utf-8') as f:
     for item in output_list:
+
         f.write(json.dumps(item, ensure_ascii=False) + '\n')
