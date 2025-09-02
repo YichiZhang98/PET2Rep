@@ -39,7 +39,7 @@ for subject_prompt in default_prompt:
     subject_id = subject_prompt['patient_id']
     prompt_system = subject_prompt['prompt_system']
     prompt_user_text = subject_prompt['prompt_user_text']
-    image_paths = subject_prompt['prompt_user_fuse']
+    image_paths = subject_prompt['prompt_image_fuse']
     images = [Image.open(path) for path in image_paths]
     ground_truth = subject_prompt['answer']
     messages = [
@@ -91,3 +91,4 @@ with open(os.path.join('origin_results','result_qwen25vl-32b_v2_git.jsonl'), 'w'
     for item in output_list:
 
         f.write(json.dumps(item, ensure_ascii=False) + '\n')
+
