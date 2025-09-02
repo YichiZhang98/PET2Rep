@@ -1,5 +1,5 @@
 # PET2Rep
-[**📖 arXiv**](https://arxiv.org/abs/2508.04062) | [**🎈 GitHub**](https://github.com/YichiZhang98/PET2Rep) 
+[**📖 arXiv**](https://arxiv.org/abs/2508.04062) | [**🎈 GitHub**](https://github.com/YichiZhang98/PET2Rep) | [**🤗 Hugging Face**](https://huggingface.co/datasets/r1pples/PET2Rep)
 
 This repository is the official report for **PET2Rep: Towards Vision-Language Model-Drived Automated Radiology Report Generation for Positron Emission Tomography**.
 ![image](PET2Rep.png)
@@ -72,3 +72,4 @@ If you find this repository helpful, please consider citing:
   year={2025}
 }
 ```
+
