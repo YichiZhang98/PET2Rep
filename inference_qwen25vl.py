@@ -35,26 +35,24 @@ generation_config = GenerationConfig(
 
 
 output_list = []
-for subject_prompt in default_prompt[0:5]:
+for subject_prompt in default_prompt:
     subject_id = subject_prompt['patient_id']
-    pet_path = subject_prompt['prompt_user_pet']
-    ct_path = subject_prompt['prompt_user_structure']
     prompt_system = subject_prompt['prompt_system']
     prompt_user_text = subject_prompt['prompt_user_text']
-    image_paths = subject_prompt['prompt_user_fuse']
+    image_paths = subject_prompt['prompt_image_fuse']
     images = [Image.open(path) for path in image_paths]
     ground_truth = subject_prompt['answer']
     messages = [
         {
             "role":"system",
-            "content":subject_prompt["prompt_system"]
+            "content":prompt_system
         },
 
         {
             "role":"user",
             "content":[
                 *[{"type": "image", "image": img} for img in images],
-                {"type":"text","text":subject_prompt['prompt_user_text']}
+                {"type":"text","text":prompt_user_text}
                 ]
                 }
     ]
