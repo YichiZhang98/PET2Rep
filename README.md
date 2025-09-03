@@ -1,11 +1,12 @@
 # PET2Rep
-[**📖 arXiv**](https://arxiv.org/abs/2508.04062) | [**🎈 GitHub**](https://github.com/YichiZhang98/PET2Rep) 
+[**📖 arXiv**](https://arxiv.org/abs/2508.04062) | [**🎈 GitHub**](https://github.com/YichiZhang98/PET2Rep) | [**🤗 Dataset**](https://huggingface.co/datasets/r1pples/PET2Rep) 
 
-This repository is the official report for **PET2Rep: Towards Vision-Language Model-Drived Automated Radiology Report Generation for Positron Emission Tomography**.
+This repository is the official implementation of **PET2Rep: Towards Vision-Language Model-Drived Automated Radiology Report Generation for Positron Emission Tomography**.
+
+
 ![image](PET2Rep.png)
 ## Overview
-
-PET2Rep is the first benchmark for evaluating VLMs in PET radiology report generation. It includes whole-body PET/CT image-report pairs covering dozens of organs with metabolic information, which is essential for reflecting the real-world clinical comprehensiveness of PET imaging in oncologic diagnostics.
+PET2Rep is the first benchmark for evaluating VLMs in PET radiology report generation. It includes 565 whole-body PET/CT image-report pairs covering dozens of organs with metabolic information, which is essential for reflecting the real-world clinical comprehensiveness of PET imaging in oncologic diagnostics.
 
 ![image](Overview.png)
 
@@ -72,3 +73,4 @@ If you find this repository helpful, please consider citing:
   year={2025}
 }
 ```
+
