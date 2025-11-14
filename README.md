@@ -27,7 +27,7 @@ conda activate pet2rep
 
 Here we provide an inference example for Qwen2.5-VL, other VLMs were also performed obeying the instruction of their technical reports. You can solve the environment by 
 ```bash
-pip install -e requirements.txt
+pip install -r requirements.txt
 ```
 Alternatively, you can also refer to the Hugging Face page of [Qwen2.5-VL](https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct).
 ```bash
@@ -74,6 +74,7 @@ If you find this repository helpful, please consider citing:
   year={2025}
 }
 ```
+
 
 
 
